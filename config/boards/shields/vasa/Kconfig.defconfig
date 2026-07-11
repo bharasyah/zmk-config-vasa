@@ -1,6 +1,6 @@
 if SHIELD_VASA
 
 config ZMK_KEYBOARD_NAME
-    default "Vasa"
+    default "vasa"
 
 endif

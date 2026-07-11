@@ -23,7 +23,7 @@
 
                         bindings = <
    &trans          &trans          &trans       
-   &bootloader     &bt BT_CLR      &kp Q        
+   &bootloader     &bt BT_CLR      &trans        
    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
                     >;
                 };
