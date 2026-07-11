@@ -1,2 +1,2 @@
 config SHIELD_VASA
-    def bool $(shields_list_contains,vasa)
+    def_bool y
