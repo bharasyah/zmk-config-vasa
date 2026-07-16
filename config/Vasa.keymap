@@ -5,9 +5,10 @@
 #include <dt-bindings/zmk/pointing.h>
 
 /{
+        
         keymap {
                 compatible = "zmk,keymap";
-                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                
                 default_layer {
                         display-name = "Default Layer";
 
@@ -37,6 +38,7 @@
    &mmv MOVE_LEFT           &mmv MOVE_DOWN    &mmv MOVE_RIGHT  
                     >;
                 };
+                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
 };
