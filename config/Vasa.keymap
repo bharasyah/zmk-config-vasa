@@ -17,6 +17,7 @@
    &mkp LCLK                &mmv MOVE_UP      &mkp RCLK        
    &mmv MOVE_LEFT           &mmv MOVE_DOWN    &mmv MOVE_RIGHT   
                    >;
+                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                 function_layer {
@@ -38,7 +39,7 @@
    &mmv MOVE_LEFT           &mmv MOVE_DOWN    &mmv MOVE_RIGHT  
                     >;
                 };
-                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+               
         };
 
 };
