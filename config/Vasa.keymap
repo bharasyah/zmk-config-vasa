@@ -49,8 +49,8 @@
 
                         bindings = <
    &spotify          &trans        &trans       
-   &trans     &bt BT_CLR      &trans        
-   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
+   &trans            &trans      &trans        
+   &bt BT_SEL 0      &bt BT_SEL 1    &bt BT_SEL 2
                     >;
                 };
 
@@ -59,7 +59,7 @@
 
                         bindings = <
    &trans        &bootloader   &trans   
-   &trans        &trans        &trans
+   &bt BT_CLR    &trans        &trans
    &sys_reset    &trans        &trans  
      
                     >;
