@@ -58,7 +58,7 @@
                         display-name = "Function Layer";
 
                         bindings = <
-   &spotify          &bt BT_SEL 0               &tog 0
+   &spotify          &bt BT_SEL 0               &tog 1
    &trans            &kp UP_ARROW                 &bt BT_SEL 1 
    &kp LEFT_ARROW             &kp DOWN_ARROW               &kp RIGHT_ARROW
                     >;
