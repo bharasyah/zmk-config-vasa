@@ -59,8 +59,8 @@
 
                         bindings = <
    &spotify          &bt BT_SEL 0        &bt BT_SEL 1       
-   &trans            &UP_ARROW                 &trans 
-   &LEFT_ARROW             &DOWN_ARROW               &RIGHT_ARROW
+   &trans            &kp UP_ARROW                 &trans 
+   &kp LEFT_ARROW             &kp DOWN_ARROW               &kp RIGHT_ARROW
                     >;
                 };
 
