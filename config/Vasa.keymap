@@ -5,7 +5,18 @@
 #include <dt-bindings/zmk/pointing.h>
 
 /{
-        
+   
+    macros {
+        spotify: zed_em_kay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LWIN &kp S &kp P &kp O &kp T &kp I &kp F &kp Y>
+                , <&macro_tap &kp ENTER>
+                ;
+        };
+    };
+     
         keymap {
                 compatible = "zmk,keymap";
                 
@@ -13,7 +24,7 @@
                         display-name = "Default Layer";
 
                         bindings = <
-   &kp C_PP                 &kp C_NEXT        &mo 1       
+   &lt 1 C_PP                 &kp C_PREVIOUS       &kp C_NEXT       
    &mkp LCLK                &mmv MOVE_UP      &mkp RCLK        
    &mmv MOVE_LEFT           &mmv MOVE_DOWN    &mmv MOVE_RIGHT   
                    >;
@@ -24,9 +35,9 @@
                         display-name = "Function Layer";
 
                         bindings = <
-   &trans          &trans          &trans       
-   &bootloader     &bt BT_CLR      &trans        
-   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2
+   &bootloader          &trans          &spotify       
+   &trans               &bt BT_CLR      &trans        
+   &bt BT_SEL 0         &bt BT_SEL 1    &bt BT_SEL 2
                     >;
                 };
 
@@ -34,9 +45,10 @@
                         display-name = "Mouse Layer";
 
                         bindings = <
-   &trans   &trans  &trans      
-   &mkp LCLK                &mmv MOVE_UP      &mkp RCLK        
-   &mmv MOVE_LEFT           &mmv MOVE_DOWN    &mmv MOVE_RIGHT  
+   &trans   &trans  &trans 
+   &trans   &trans  &trans
+   &trans   &trans  &trans
+     
                     >;
                 };
                
