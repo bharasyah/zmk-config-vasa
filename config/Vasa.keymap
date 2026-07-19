@@ -47,7 +47,7 @@
                         display-name = "Default Layer";
 
                         bindings = <
-   &ltboot 2 C_PP                 &kp C_PREVIOUS       &ltarrow 1 C_NEXT       
+   &ltboot 2 C_PP           &kp C_PREVIOUS    &ltarrow 1 C_NEXT       
    &mkp LCLK                &mmv MOVE_UP      &mkp RCLK        
    &mmv MOVE_LEFT           &mmv MOVE_DOWN    &mmv MOVE_RIGHT   
                    >;
@@ -58,10 +58,11 @@
                         display-name = "Function Layer";
 
                         bindings = <
-   &spotify          &trans              &tog 1
-   &trans            &kp UP_ARROW        &trans 
-   &kp LEFT_ARROW    &kp DOWN_ARROW      &kp RIGHT_ARROW
+   &kp ESC         &trans              &tog 1
+   &spotify        &kp UP_ARROW        &kp ENTER 
+   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW
                     >;
+                    sensor-bindings = <&inc_dec_msc SCRL_DOWN SCRL_UP>;
                 };
 
                 mouse_layer {
