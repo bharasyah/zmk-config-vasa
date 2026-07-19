@@ -7,6 +7,12 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20
 #include <dt-bindings/zmk/pointing.h>
 
+&msc {
+    acceleration-exponent = <0>;
+    time-to-max-speed-ms = <0>;
+    delay-ms = <0>;
+};
+
 /{
    behaviors {
         ltboot: boot_layer_tap {
