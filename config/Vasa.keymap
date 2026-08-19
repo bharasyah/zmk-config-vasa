@@ -48,6 +48,17 @@
                 , <&macro_tap &kp ENTER>
                 ;
         };
+        osk: zed_em_kay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <50>;
+            tap-ms = <50>;
+            bindings
+                = <&macro_press &kp LWIN &kp LCTRL >
+                , <&macro_tap &kp O >
+                , <&macro_release &kp LWIN &kp LCTRL >
+                ;
+        };
     };
      
         keymap {
@@ -69,7 +80,7 @@
                         display-name = "Function Layer";
 
                         bindings = <
-   &spotify        &trans            &tog 1
+   &spotify        &osk           &tog 1
    &mkp LCLK       &mmv MOVE_UP      &mkp RCLK        
    &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT
    
