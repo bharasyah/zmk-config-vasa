@@ -48,7 +48,7 @@
                 , <&macro_tap &kp ENTER>
                 ;
         };
-        osk: zed_em_kay {
+        osk: o_sk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <50>;
