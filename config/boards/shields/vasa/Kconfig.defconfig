@@ -2,7 +2,7 @@ if SHIELD_VASA_DONGLE
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "Vasa"
+    default "vasa"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
