@@ -30,3 +30,6 @@
         transform = <&default_transform>;
     };
 };
+&mo {
+    label = "MO";
+};
