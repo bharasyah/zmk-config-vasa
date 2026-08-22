@@ -64,15 +64,7 @@
      
         keymap {
                 compatible = "zmk,keymap";
-                 base {
-                        bindings = <
-                              
-                              &trans &trans &trans
-                              &trans &trans &trans
-                               &bapp &trans &bapp
-      
-                        >;
-                };
+          
                 default_layer {
                         display-name = "Default Layer";
 
@@ -102,8 +94,8 @@
 
                         bindings = <
    &trans        &bootloader   &bt BT_SEL 0 
-   &bt BT_CLR    &trans        &bt BT_SEL 1
-   &sys_reset    &trans        &bt BT_SEL 2  
+   &bt BT_CLR    &trans        &bapp
+   &sys_reset    &trans        &bapp  
      
                     >;
                 };
