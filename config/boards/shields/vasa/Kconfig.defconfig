@@ -26,4 +26,9 @@ config BT_MAX_PAIRED
 config ZMK_POINTING
     default y
 
+config CONFIG_EC11
+    default y
+
+config CONFIG_EC11_TRIGGER_GLOBAL_THREAD
+    default y
 endif
