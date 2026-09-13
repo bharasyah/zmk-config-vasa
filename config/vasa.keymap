@@ -82,7 +82,7 @@
                 };
 
                 function_layer {
-                        display-name = "Function Layer";
+                        display-name = "Mouse Layer";
 
                         bindings = <
    &spotify        &osk           &tog 1
@@ -94,7 +94,7 @@
                 };
 
                 mouse_layer {
-                        display-name = "Mouse Layer";
+                        display-name = "Tools Layer";
 
                         bindings = <
    &trans        &bootloader   &bt BT_SEL 0 
