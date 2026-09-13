@@ -8,3 +8,5 @@ include :
   - board: nice_nano_v2
     shield: vasa
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: nice_nano_v2
+    shield: vasa_dongle dongle_display
